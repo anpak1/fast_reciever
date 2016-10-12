@@ -1,0 +1,23 @@
+{
+  "name": "fast_reciever",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fast_reciever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anpak1/fast_reciever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anpak1/fast_reciever/issues"
+  },
+  "homepage": "https://github.com/anpak1/fast_reciever#readme",
+  "dependencies": {
+    "clusteripc": "^1.0.0",
+    "idgenerator": "*"
+  }
+}
