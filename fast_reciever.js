@@ -4,14 +4,15 @@
 process.setMaxListeners(0);
 
 var http 		= require('http')
-	, Generator = require('./idgenerator')
-	, queryParse = require('querystring').parse;
+	, Generator = require('idgenerator')
+	, queryParse = require('querystring').parse
+	, urlParse  = require('url').parse;
 
 var generator = new Generator();
 
 var server = http.createServer();
 
-var ClusterIPC = require('./clusterIPC'),
+var ClusterIPC = require('clusteripc'),
 	clusterIPC = new ClusterIPC(server, process, {
 		generator: generator
 	});
